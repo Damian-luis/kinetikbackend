@@ -34,13 +34,14 @@ app.post('/get', function(req, res){
     
 })
 
-/*
 app.post('/enviar',async (req, res)=>{
-  console.log(req.body)
+ 
   const name = req.body.name
-  const message = req.body.message
-  const mail= req.body.mail
-  
+    const mail= req.body.mail
+    const payment = req.body.payment
+    const phone= req.body.phone
+    const service=req.body.service
+    const web=req.body.web
   
   function mailToMyself(){
       
@@ -48,8 +49,8 @@ app.post('/enviar',async (req, res)=>{
       service: 'gmail',
         // true for 465, false for other ports
         auth: {
-          user: 'damian.duran@webleadsgroup.com', // generated ethereal user
-          pass: 'owucgwndkhfcjpac', // generated ethereal password
+          user: 'alojaaasa@gmail.com', // generated ethereal user
+          pass: 'rebrmqzksitrawuc', // generated ethereal password
         }
       
       });
@@ -57,14 +58,18 @@ app.post('/enviar',async (req, res)=>{
   
   
       var mailOptions = {
-        from: '"Portfolio" <damian.duran@webleadsgroup.com>', // sender address
+        from: '"Mensaje en pagina Kinetic" <damian.luis.porta@gmail.com>', // sender address
         to: `damian.luis.porta@gmail.com`, // sender addresslist of receivers
-        subject: "Nuevo Mensaje desde tu potfolio!", // Subject line
+        subject: "Nuevo en Kinetic", // Subject line
          // plain text body
         html: `<h4>Nombre del cliente: ${name} <br>
         Mail de contacto: ${mail}<br>
-        Mensaje:</h4><br><br><br>
-        <h3> ${message}</h3>`,
+        Numero de contacto: ${phone}<br>
+        Tipo de servicio: ${service}<br>
+        Presupuesto estimado: ${payment}<br>
+        Ejemplo de referencia (opcional): ${web}<br>
+        
+        `,
         // html bod
         
       }
@@ -88,8 +93,8 @@ app.post('/enviar',async (req, res)=>{
       service: 'gmail',
         // true for 465, false for other ports
         auth: {
-          user: 'damian.luis.porta@gmail.com', // generated ethereal user
-          pass: 'bhfpebetrkzfinzu', // generated ethereal password
+          user: 'alojaaasa@gmail.com', // generated ethereal user
+          pass: 'rebrmqzksitrawuc', // generated ethereal password
         }
       
       });
@@ -97,22 +102,22 @@ app.post('/enviar',async (req, res)=>{
   
   
       var mailOptions = {
-        from: '"Damian Duran" <damian.luis.porta@gmail.com>', // sender address
+        from: '"Kinetic" <alojaaasa@gmail.com>', // sender address
         to: `${mail}`, // list of receivers
-        subject: "Damian Duran", // Subject line
+        subject: "Kinetic", // Subject line
          // plain text body
          text: "",
         html: `<div style="height:auto;width:100vw;border:solid 1px black;padding:15px;border-radius:10px;">
         
-        <h2>Muchas gracias por comunicarte conmigo ☺! <h2><br>
-        <h2>He recibido tu mensaje exitosamente, me pondre en contacto con vos muy pronto, muchas gracias! :) .</h2>
+        <h2>Thank you for get in touch with us! <h2><br>
+        <h2>We've received your message successfully, one of the member of our team will send you a message.</h2>
         <br>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <h3>Damian Duran. </h3>
+        <h3>Kinetic team. </h3>
         
         
         </div>`// html body
@@ -141,4 +146,3 @@ app.post('/enviar',async (req, res)=>{
      
   })
 
-  */
