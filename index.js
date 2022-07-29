@@ -58,8 +58,8 @@ app.post('/enviar',async (req, res)=>{
   
   
       var mailOptions = {
-        from: '"Mensaje en pagina Kinetic" <damian.luis.porta@gmail.com>', // sender address
-        to: `damian.luis.porta@gmail.com`, // sender addresslist of receivers
+        from: '"Mensaje en pagina Kinetic" <alojaaasa@gmail.com>', // sender address
+        to: `info@thekineticmarketing.com`, // sender addresslist of receivers
         subject: "Nuevo en Kinetic", // Subject line
          // plain text body
         html: `<h4>Nombre del cliente: ${name} <br>
